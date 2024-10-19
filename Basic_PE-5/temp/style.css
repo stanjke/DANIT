@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.border {
+  display: flex;
+  background-color: purple;
+  padding: 50px;
+}
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 10px;
+}
+.green {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  margin: 10px;
+}
+.black {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  margin: 10px;
+}

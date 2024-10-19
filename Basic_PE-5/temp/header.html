@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      body {
+        line-height: 1.5;
+        font-size: 1.1rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        color: #fff;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #01111a;
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+
+      img {
+        height: 48px;
+      }
+
+      nav ul {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+
+      nav ul li {
+        list-style: none;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      button {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: #22a5e5;
+        color: inherit;
+        border: none;
+        cursor: pointer;
+        font-size: inherit;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+      }
+
+      button:hover {
+        background-color: #1c8ac9;
+        transition: background-color 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1><img src="./512xnewhypixel.png" alt="" />HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <button>
+              <span>Store</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                <path
+                  d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

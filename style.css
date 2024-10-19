@@ -1,0 +1,61 @@
+:root {
+  --navbar-bg-color: #343a40;
+  --navbar-text-color: #fff;
+  --navbar-hover-color: #007bff;
+  --btn-bg-color: #007bff;
+  --btn-hover-bg-color: #0056b3;
+  --btn-hover-border-color: #004085;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 5rem;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header__logo-text__link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header__nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.header__nav-button {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-button__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__nav-button__link svg {
+  margin-right: 8px;
+}
+
+.header__nav-button__link span {
+  font-size: 16px;
+}
