@@ -1,17 +1,21 @@
 body {
   color: white;
 }
-
-header {
+.header {
   background-color: #01111a;
+  display: flex;
 }
-
 .header__logo-wrapper {
   background-color: lightblue;
   display: flex;
-  gap: 10px;
 }
-
 .header__logo-image {
   height: 50px;
+}
+.header__list {
+  display: flex;
+}
+
+.header__list-item {
+  background-color: lightgreen;
 }

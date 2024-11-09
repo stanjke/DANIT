@@ -1,0 +1,18 @@
+body {
+  color: white;
+}
+
+.header {
+  background-color: #01111a;
+  display: flex;
+}
+
+.header__logo-wrapper {
+  background-color: red;
+  display: flex;
+  gap: 10px;
+}
+
+.header__logo-image {
+  height: 50px;
+}
