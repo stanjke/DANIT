@@ -1,5 +1,6 @@
 body {
   color: white;
+  font-family: "Khaylila", sans-serif;
 }
 .header {
   background-color: #01111a;
@@ -9,14 +10,20 @@ body {
   padding: 0 50px;
 }
 .header__logo-wrapper {
-  background-color: lightblue;
   display: flex;
+  align-items: center;
 }
 .header__logo-image {
   height: 50px;
 }
+
+.header__logo-title {
+  text-transform: uppercase;
+}
+
 .header__list {
   display: flex;
+  align-items: center;
 }
 .header__item {
   padding: 0 5px 0 5px;
