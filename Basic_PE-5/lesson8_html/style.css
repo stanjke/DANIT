@@ -1,26 +1,21 @@
 body {
   color: white;
-  font-family: "Khaylila", sans-serif;git a
+  font-family: "busseta", sans-serif;
 }
 .header {
   background-color: #01111a;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
 }
 .header__logo-wrapper {
+  background-color: #01111a;
   display: flex;
   align-items: center;
 }
 .header__logo-image {
   height: 50px;
 }
-
-.header__logo-title {
-  text-transform: uppercase;
-}
-
 .header__list {
   display: flex;
   align-items: center;
@@ -28,6 +23,7 @@ body {
 .header__item {
   padding: 0 5px 0 5px;
   margin: 0 18px 0 18px;
+  cursor: pointer;
 }
 .header__button {
   display: flex;
@@ -35,15 +31,18 @@ body {
   padding: 10px 20px;
   align-items: center;
   gap: 9px;
-  border-radius: 20px;
-  border: solid 2px cornflowerblue;
-  cursor: pointer;
+  border-radius: 5px;
+  border: solid 2px none;
+}
+
+.header__button:hover {
+  background-color: darkblue;
+  font-family: "Redwinger Personal Use", sans-serif;
 }
 
 .header__button-icon {
   fill: azure;
 }
-
 .hero {
   height: 100vh;
   background-image: url("./img/lmfoyn.jpg");

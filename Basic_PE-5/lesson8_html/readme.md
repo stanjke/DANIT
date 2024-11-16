@@ -1,5 +1,3 @@
 ### Links:
 
-- https://github.com/stanjke/DANIT/blob/main/Basic_PE-5/lesson7_html/img/lmfoyn.jpg
-- https://fonts.google.com/
-- https://www.cdnfonts.com/
+- images https://github.com/stanjke/DANIT/tree/main/Basic_PE-5/lesson8_html/img
