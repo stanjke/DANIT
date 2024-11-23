@@ -1,0 +1,88 @@
+:root {
+  --button-background: #22a5e5;
+}
+body {
+  font-family: "Seidlitz_Font", sans-serif;
+  color: white;
+}
+.header {
+  background-color: #01111a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header__logo-image {
+  height: 50px;
+}
+.header__logo-title {
+  text-transform: uppercase;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+}
+.header__item {
+  padding: 0 5px 0 5px;
+  margin: 0 18px 0 18px;
+}
+.header__button {
+  display: flex;
+  background-color: var(--button-background);
+  padding: 10px 20px;
+  align-items: center;
+  gap: 9px;
+  border-radius: 20px;
+  border: solid 2px cornflowerblue;
+  cursor: pointer;
+}
+.header__button:hover {
+  background-color: chartreuse;
+  font-family: "Hangar", sans-serif;
+}
+
+.header__button-icon {
+  fill: azure;
+}
+.hero {
+  height: 100vh;
+  background-image: url("./image/lmfoyn.jpg");
+}
+.hero__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(1, 17, 26, 0.8);
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+}
+.hero__title {
+  font-size: 75px;
+  margin-bottom: 25px;
+}
+.hero__text {
+  width: 400px;
+  margin-bottom: 25px;
+}
+.hero__button {
+  background-color: var(--button-background);
+}
+.hero__button--transparent {
+  border: none;
+  background-color: transparent;
+}
+.hero__button-wrapper {
+  display: flex;
+  gap: 5px;
+}
+.about {
+  background-color: black;
+}
