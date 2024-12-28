@@ -1,4 +1,4 @@
-// Comprassion  operators:
+// Comparession  operators:
 
 // Equal (==) - compares two operands, returns true if they are equal
 // {

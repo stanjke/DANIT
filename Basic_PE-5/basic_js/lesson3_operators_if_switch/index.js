@@ -16,3 +16,13 @@
 // console.log("variable number equal to: ", number);
 
 // // camelCase
+
+{
+  const allCombinations = [
+    { x: true, y: true, "x && y": true && true, "x || y": true || true },
+    { x: true, y: false, "x && y": true && false, "x || y": true || false },
+    { x: false, y: true, "x && y": false && true, "x || y": false || true },
+    { x: false, y: false, "x && y": false && false, "x || y": false || false },
+  ];
+  console.table(allCombinations);
+}

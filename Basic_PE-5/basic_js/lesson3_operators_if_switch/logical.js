@@ -41,15 +41,15 @@
 // }
 
 // All possible combinations for logical AND (&&) and OR (||)
-// {
-//   const allCombinations = [
-//     { x: true, y: true, "x && y": true && true, "x || y": true || true },
-//     { x: true, y: false, "x && y": true && false, "x || y": true || false },
-//     { x: false, y: true, "x && y": false && true, "x || y": false || true },
-//     { x: false, y: false, "x && y": false && false, "x || y": false || false },
-//   ];
-//   console.table(allCombinations);
-// }
+{
+  const allCombinations = [
+    { x: true, y: true, "x && y": true && true, "x || y": true || true },
+    { x: true, y: false, "x && y": true && false, "x || y": true || false },
+    { x: false, y: true, "x && y": false && true, "x || y": false || true },
+    { x: false, y: false, "x && y": false && false, "x || y": false || false },
+  ];
+  console.table(allCombinations);
+}
 
 // Tasks block
 
