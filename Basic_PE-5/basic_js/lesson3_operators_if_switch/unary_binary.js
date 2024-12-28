@@ -15,82 +15,90 @@
 // }
 
 // Increment (++) postfix notation - increases a number by 1
-// {
-//   let a = 1;
-//   console.log("value is retrieved only after the operation is done: ", a++);
-//   a++;
-//   console.log("Increment (++) - increases a number by 1: ", a);
-// }
+{
+  // let a = "111";
+  // let b = 115;
+  // console.log("first output: ", b);
+  // console.log("value is retrieved only after the operation is done: ", ++b);
+  // console.log("second output: ", b);
+  // a++;
+  // console.log("Increment (++) - increases a number by 1: ", a);
+}
 
 // Increment (++) prefix notation - increases a number by 1
-// {
-//   let a1 = 1;
-//   console.log("value is retrieved immediately: ", ++a1);
-//   ++a1;
-//   console.log("Increment (++) prefix notation - increases a number by 1: ", a1);
-// }
+
+{
+  // let a = "57"; //string
+  // console.log(a);
+  // console.log("first output: ", a);
+  // console.log("value is retrieved immediately: ", ++a); // 58
+  // console.log("value is retrieved immediately: ", ++a);
+  // ++a;
+  // console.log("Increment (++) prefix notation - increases a number by 1: ", a);
+}
 
 // Decrement (--) postfix notation - decreases a number by 1
 // {
-//   let b = 2;
+//   let b = "226";
+//   console.log("Decrement (--) - decreases a number by 1: ", --b); 225
+//   console.log(b) 225
 //   b--;
-//   console.log("Decrement (--) - decreases a number by 1: ", b);
 // }
 
 // Decrement (--) prefix notation - decreases a number by 1
-// {
-//   let b1 = 2;
-//   --b1;
-//   console.log("Decrement (--) prefix notation - decreases a number by 1: ", b1);
-// }
+{
+  let b = "3075";
+  console.log("Decrement (--) prefix notation - decreases a number by 1: ", b--);
+  console.log("Decrement (--) prefix notation - decreases a number by 1: ", --b);
+}
 
 // Unary operators table
-// {
-//   const unaryResults = [
-//     { Operator: "+", Description: "Unary plus", Operand: '"1"', Result: +"1" },
-//     { Operator: "-", Description: "Unary minus", Operand: '"2"', Result: -"2" },
-//     {
-//       Operator: "++ (postfix)",
-//       Description: "Increment postfix",
-//       Operand: "1",
-//       Result: (() => {
-//         let a = 1;
-//         a++;
-//         return a;
-//       })(),
-//     },
-//     {
-//       Operator: "++ (prefix)",
-//       Description: "Increment prefix",
-//       Operand: "1",
-//       Result: (() => {
-//         let a1 = 1;
-//         return ++a1;
-//       })(),
-//     },
-//     {
-//       Operator: "-- (postfix)",
-//       Description: "Decrement postfix",
-//       Operand: "2",
-//       Result: (() => {
-//         let b = 2;
-//         b--;
-//         return b;
-//       })(),
-//     },
-//     {
-//       Operator: "-- (prefix)",
-//       Description: "Decrement prefix",
-//       Operand: "2",
-//       Result: (() => {
-//         let b1 = 2;
-//         return --b1;
-//       })(),
-//     },
-//   ];
+{
+  const unaryResults = [
+    { Operator: "+", Description: "Unary plus", Operand: '"1"', Result: +"1" },
+    { Operator: "-", Description: "Unary minus", Operand: '"2"', Result: -"2" },
+    {
+      Operator: "++ (postfix)",
+      Description: "Increment postfix",
+      Operand: "1",
+      Result: (() => {
+        let a = 1;
+        a++;
+        return a;
+      })(),
+    },
+    {
+      Operator: "++ (prefix)",
+      Description: "Increment prefix",
+      Operand: "1",
+      Result: (() => {
+        let a1 = 1;
+        return ++a1;
+      })(),
+    },
+    {
+      Operator: "-- (postfix)",
+      Description: "Decrement postfix",
+      Operand: "2",
+      Result: (() => {
+        let b = 2;
+        b--;
+        return b;
+      })(),
+    },
+    {
+      Operator: "-- (prefix)",
+      Description: "Decrement prefix",
+      Operand: "2",
+      Result: (() => {
+        let b1 = 2;
+        return --b1;
+      })(),
+    },
+  ];
 
-//   console.table(unaryResults);
-// }
+  console.table(unaryResults);
+}
 
 // Task block
 
