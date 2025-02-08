@@ -52,6 +52,10 @@
         let cell = document.createElement("div");
         cell.classList.add("cell");
         cell.innerText = GAME_UNIT.X;
+        cell.addEventListener("click", function () {
+          console.log(i);
+        });
+
         gameBoard.appendChild(cell);
       }
     </script>
