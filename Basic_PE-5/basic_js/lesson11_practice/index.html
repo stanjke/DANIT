@@ -20,14 +20,40 @@
         grid-template-rows: repeat(3, 100px);
         border: 2px solid yellow;
       }
+
+      .cell {
+        color: #fff;
+        display: flex;
+        height: 100%;
+        /* width: 100px;
+        height: 100px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid pink;
+      }
     </style>
   </head>
   <body>
-    <div id="game-board"></div>
+    <div class="cell cell-1 cell-yellow" id="game-board"></div>
     <script>
       //DOM API
       const gameBoard = document.getElementById("game-board");
       let boardValues = ["", "", "", "", "", "", "", "", ""];
+      const GAME_UNIT = {
+        X: "X",
+        O: "O",
+      };
+
+      console.log(boardValues.length);
+      let currentPlayer = GAME_UNIT.X;
+      //   condition
+      for (let i = 0; i < boardValues.length; i++) {
+        let cell = document.createElement("div");
+        cell.classList.add("cell");
+        cell.innerText = GAME_UNIT.X;
+        gameBoard.appendChild(cell);
+      }
     </script>
   </body>
 </html>
