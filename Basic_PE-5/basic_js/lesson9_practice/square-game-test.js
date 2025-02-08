@@ -19,25 +19,6 @@ let dirX = 1;
 let dirY = 1;
 let totalClicks = 0;
 
-function getRandomDirection() {
-  return Math.random() < 0.5 ? -1 : 1;
-}
-
-function getRandomColor() {
-  return Math.floor(Math.random() * 256);
-}
-
-function reset() {
-  x = 0;
-  y = 0;
-  dirX = 1;
-  dirY = 1;
-  totalClicks = 0;
-  clickCounter.innerHTML = totalClicks;
-  redSquare.style.left = x + "px";
-  redSquare.style.top = y + "px";
-}
-
 function moveSquare() {
   x += dirX;
   y += dirY;
@@ -45,6 +26,24 @@ function moveSquare() {
   redSquare.style.top = y + "px";
   if (x + 100 >= window.innerWidth || x <= 0) dirX *= -1;
   if (y + 100 >= window.innerHeight || y <= 0) dirY *= -1;
+}
+
+let intervalId = null;
+
+redSquare.addEventListener("mouseenter", () => {
+  intervalId = setInterval(moveSquare, 10);
+});
+
+redSquare.addEventListener("mouseleave", () => {
+  clearInterval(intervalId);
+});
+
+function getRandomDirection() {
+  return Math.random() < 0.5 ? -1 : 1;
+}
+
+function getRandomColor() {
+  return Math.floor(Math.random() * 256);
 }
 
 redSquare.addEventListener("click", () => {
@@ -59,15 +58,15 @@ redSquare.addEventListener("click", () => {
   redSquare.style.backgroundColor = `rgb(${getRandomColor()}, ${getRandomColor()}, ${getRandomColor()})`;
 });
 
-let intervalId = null;
-
-redSquare.addEventListener("mouseenter", () => {
-  intervalId = setInterval(moveSquare, 10);
-});
-
-redSquare.addEventListener("mouseleave", () => {
-  clearInterval(intervalId);
-});
-//add function to change color of the square
+function reset() {
+  x = 0;
+  y = 0;
+  dirX = 1;
+  dirY = 1;
+  totalClicks = 0;
+  clickCounter.innerHTML = totalClicks;
+  redSquare.style.left = x + "px";
+  redSquare.style.top = y + "px";
+}
 
 document.body.appendChild(redSquare);
