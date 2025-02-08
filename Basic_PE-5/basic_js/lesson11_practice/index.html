@@ -11,9 +11,10 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+        margin: 0;
       }
 
-      .game-board {
+      #game-board {
         display: grid;
         grid-template-columns: repeat(3, 100px);
         grid-template-rows: repeat(3, 100px);
@@ -22,6 +23,11 @@
     </style>
   </head>
   <body>
-    <div class="game-board" id="game-board"></div>
+    <div id="game-board"></div>
+    <script>
+      //DOM API
+      const gameBoard = document.getElementById("game-board");
+      let boardValues = ["", "", "", "", "", "", "", "", ""];
+    </script>
   </body>
 </html>
