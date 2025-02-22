@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic tac toe</title>
+    <style>
+      body {
+        background-color: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      #game-board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 100px);
+        border: 2px solid yellow;
+      }
+
+      .cell {
+        color: #fff;
+        display: flex;
+        height: 100%;
+        /* width: 100px;
+        height: 100px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px dotted pink;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-board"></div>
+
+    <script>
+      //DOM API
+      const gameBoard = document.getElementById("game-board");
+      gameBoard.style.border = "2px solid blue";
+
+      let boardValues = ["", "", "", "", "", "", "", "", ""];
+      const WIN_COMBINATION = [
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+      ];
+
+      const GAME_UNIT = {
+        X: "X",
+        O: "O",
+      };
+
+      // currentPlayer - поточний гравець
+      let currentPlayer = GAME_UNIT.X;
+      //   condition - умова
+
+      // <div data-index="0"> X </div>;
+
+      for (let i = 0; i < boardValues.length; i++) {
+        let cell = document.createElement("div"); // html node
+        cell.classList.add("cell");
+        cell.dataset.index = i;
+        cell.addEventListener("click", function (e) {
+          const index = e.target.dataset.index;
+          if (boardValues[index] === "") {
+            console.log(index);
+            boardValues[index] = currentPlayer;
+            console.log(boardValues);
+            e.target.innerText = currentPlayer;
+            checkWin();
+            changePlayer();
+          }
+        });
+        gameBoard.appendChild(cell);
+      }
+
+      // const WIN_COMBINATION = [
+      //   [0, 3, 6],- combination
+      //   [1, 4, 7],- combination
+      //   [2, 5, 8],- combination
+      //   [0, 1, 2],- combination
+      //   [3, 4, 5],- combination
+      //   [6, 7, 8],- combination
+      //   [0, 4, 8],- combination
+      //   [2, 4, 6],- combination
+      // ];
+
+      function checkWin() {
+        for (let combination of WIN_COMBINATION) {
+          // let [a,b,c] = combination;
+          let a = combination[0];
+          let b = combination[1];
+          let c = combination[2];
+
+          if (boardValues[a] && boardValues[a] === boardValues[b] && boardValues[a] === boardValues[c]) {
+            alert("Winner" + " " + currentPlayer);
+            // console.log("Winner" + " " + currentPlayer);
+            // gameOver()
+          }
+        }
+      }
+      function changePlayer() {
+        if (currentPlayer === GAME_UNIT.X) {
+          currentPlayer = GAME_UNIT.O;
+        } else {
+          currentPlayer = GAME_UNIT.X;
+        }
+      }
+
+      function gameOver() {}
+    </script>
+  </body>
+</html>
