@@ -1,0 +1,23 @@
+body {
+  background-color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+  border: 2px solid #fff;
+}
+
+.cell {
+  background-color: yellow;
+}
+
+.food {
+  background-color: green;
+}
